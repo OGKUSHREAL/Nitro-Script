@@ -9,10 +9,10 @@ local activeCars = {}
 vRP.defInventoryItem({"nitro","Caribisk Nitro","Bruges til at gøre biler hurtigere", function(args)
 
     local choices = {}
-    choices['> brug'] = {function(player,choice,mod)
-        local user_id = vRP.getUserId({player})
+    choices['> brug'] = {function(source,choice,mod)
+        local user_id = vRP.getUserId({source})
         if user_id ~= nil then
-            vRP.tryGetInventoryItem({user_id,Config.NitroItem.Spawn,1})
+            vRP.tryGetInventoryItem({user_id,Config.NitroItem,1})
             TriggerClientEvent('nitro:activated', source)
             vRP.closeMenu({player})
         end
