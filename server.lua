@@ -6,13 +6,13 @@ vRP = Proxy.getInterface("vRP")
 
 local activeCars = {}
 
-vRP.defInventoryItem({Config.NitroItem,'Caribansk Nitro','Bruges til boost dit køretøjs fart!', function(args)
+vRP.defInventoryItem({Config.NitroItem.Spawn,Config.NitroItem.label,Config.NitroItem.Desc, function(args)
 
     local choices = {}
-    choices['> Brug'] = {function(player,choice,mod)
+    choices[Config.NitroItem.Choice] = {function(player,choice,mod)
         local user_id = vRP.getUserId({player})
         if user_id ~= nil then
-            vRP.tryGetInventoryItem({user_id,Config.NitroItem,1})
+            vRP.tryGetInventoryItem({user_id,Config.NitroItem.Spawn,1})
             TriggerClientEvent('nitro:activated', source)
             vRP.closeMenu({player})
         end
