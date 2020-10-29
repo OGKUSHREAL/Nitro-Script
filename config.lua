@@ -9,7 +9,7 @@ Config.NitroItem {
   Spawn = "nitro",
   label = "Caribisk Nitro",
   Desc = "Bruges til at gøre biler hurtigere",
-  Choice = > "Installer",
+  Choice = "> Installer",
  }
 
 Config.Hotkey = 21 -- LEFT SHIFT - Kan ændres på https://docs.fivem.net/docs/game-references/controls/
