@@ -8,7 +8,7 @@ Config.Nitro = { -- SÆT HVOR MEGET FAT BILEN SKAL FÅ
 Config.NitroItem {
   Spawn = "nitro",
   label = "Caribisk Nitro",
-  Desc = "Bruges til at gøre biler hurtigere,
+  Desc = "Bruges til at gøre biler hurtigere",
   Choice = > "Installer",
  }
 
