@@ -1,5 +1,3 @@
-vRP = Proxy.getInterface("vRP")
-
 local nitro = 0
 local nitroUsed = false
 local nitroveh = nil
@@ -190,8 +188,6 @@ end)
 RegisterNetEvent('nitro:activated')
 AddEventHandler('nitro:activated', function()
   local veh = GetVehiclePedIsIn(GetPlayerPed(-1), false)
-
-  vRP.closeMenu({player})
 
   FreezeEntityPosition(veh, true)
   SetVehicleDoorOpen(veh, 4, 0, 0)
