@@ -5,6 +5,13 @@ Config.Nitro = { -- SÆT HVOR MEGET FAT BILEN SKAL FÅ
   Torque = 100.0
 }
 
+Config.NitroItem {
+  Spawn = "nitro",
+  label = "Caribisk Nitro",
+  Desc = "Bruges til at gøre biler hurtigere,
+  Choice = > "Installer",
+ }
+
 Config.Hotkey = 21 -- LEFT SHIFT - Kan ændres på https://docs.fivem.net/docs/game-references/controls/
 
 Config.consumption = 85
