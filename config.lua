@@ -5,7 +5,7 @@ Config.Nitro = { -- SÆT HVOR MEGET FAT BILEN SKAL FÅ
   Torque = 100.0
 }
 
-Config.NitroItem {
+Config.NitroItem = {
   Spawn = "nitro",
   label = "Caribisk Nitro",
   Desc = "Bruges til at gøre biler hurtigere",
